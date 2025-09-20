@@ -1,0 +1,32 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+.metadata/
+
+# Maven build directory
+/target/
+
+# Logs and reports
+*.log
+/test-output/
+*.html
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Java build artifacts
+*.class
+*.jar
+*.war
+*.ear
+
+# Environment and config
+.env
+*.properties
+
+# Misc
+*.swp
+*.bak
+*.tmp
