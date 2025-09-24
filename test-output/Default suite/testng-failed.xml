@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="employeeFlow.BaseTest">
+      <class name="tests.MenuTest">
         <methods>
-          <include name="login"/>
-          <include name="search"/>
-          <include name="edit_employee"/>
-          <include name="navigate_to_pim"/>
-          <include name="add_employee"/>
-          <include name="afterMethod"/>
+          <include name="lgTest"/>
+          <include name="tearDown"/>
+          <include name="tc02"/>
         </methods>
-      </class> <!-- employeeFlow.BaseTest -->
+      </class> <!-- tests.MenuTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,209 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-20T15:53:58 BDT" name="Suite" finished-at="2025-09-20T15:55:08 BDT" duration-ms="69940">
+  <suite started-at="2025-09-24T14:05:06 BDT" name="Default suite" finished-at="2025-09-24T14:05:20 BDT" duration-ms="13921">
     <groups>
     </groups>
-    <test started-at="2025-09-20T15:53:58 BDT" name="Test" finished-at="2025-09-20T15:55:08 BDT" duration-ms="69940">
-      <class name="employeeFlow.BaseTest">
-        <test-method is-config="true" signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:employeeFlow.BaseTest@76494737]" started-at="2025-09-20T15:53:58 BDT" name="login" finished-at="2025-09-20T15:54:14 BDT" duration-ms="15492" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-09-24T14:05:06 BDT" name="Default test" finished-at="2025-09-24T14:05:20 BDT" duration-ms="13921">
+      <class name="tests.MenuTest">
+        <test-method is-config="true" signature="lgTest()[pri:0, instance:tests.MenuTest@8462f31]" started-at="2025-09-24T14:05:06 BDT" name="lgTest" finished-at="2025-09-24T14:05:16 BDT" duration-ms="9840" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="navigate_to_pim()[pri:1, instance:employeeFlow.BaseTest@76494737]" started-at="2025-09-20T15:54:14 BDT" name="navigate_to_pim" finished-at="2025-09-20T15:54:16 BDT" duration-ms="1877" status="PASS">
+        </test-method> <!-- lgTest -->
+        <test-method signature="tc02()[pri:0, instance:tests.MenuTest@8462f31]" started-at="2025-09-24T14:05:16 BDT" name="tc02" finished-at="2025-09-24T14:05:20 BDT" duration-ms="3701" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigate_to_pim -->
-        <test-method signature="search(java.lang.String)[pri:2, instance:employeeFlow.BaseTest@76494737]" started-at="2025-09-20T15:54:16 BDT" name="search" finished-at="2025-09-20T15:54:27 BDT" duration-ms="11001" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[314]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.className: oxd-table-card (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: oxd-table-card (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at employeeFlow.BaseTest.search(BaseTest.java:62)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method signature="add_employee()[pri:3, instance:employeeFlow.BaseTest@76494737]" started-at="2025-09-20T15:54:27 BDT" name="add_employee" finished-at="2025-09-20T15:54:39 BDT" duration-ms="12701" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div[1]/div/div[2]/input (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div[1]/div/div[2]/input (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at employeeFlow.BaseTest.add_employee(BaseTest.java:105)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_employee -->
-        <test-method signature="edit_employee()[pri:4, instance:employeeFlow.BaseTest@76494737]" started-at="2025-09-20T15:54:39 BDT" name="edit_employee" finished-at="2025-09-20T15:54:58 BDT" duration-ms="18960" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[4]/button (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[4]/button (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at employeeFlow.BaseTest.edit_employee(BaseTest.java:167)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- edit_employee -->
-        <test-method signature="delete()[pri:5, instance:employeeFlow.BaseTest@76494737]" started-at="2025-09-20T15:54:58 BDT" name="delete" finished-at="2025-09-20T15:55:07 BDT" duration-ms="8340" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:employeeFlow.BaseTest@76494737]" started-at="2025-09-20T15:55:07 BDT" name="tearDown" finished-at="2025-09-20T15:55:08 BDT" duration-ms="1464" status="PASS">
+        </test-method> <!-- tc02 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.MenuTest@8462f31]" started-at="2025-09-24T14:05:20 BDT" name="tearDown" finished-at="2025-09-24T14:05:20 BDT" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- employeeFlow.BaseTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- tests.MenuTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

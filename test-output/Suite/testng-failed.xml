@@ -11,8 +11,8 @@
         <methods>
           <include name="login"/>
           <include name="tearDown"/>
+          <include name="delete"/>
           <include name="search" invocation-numbers="0"/>
-          <include name="edit_employee"/>
           <include name="add_employee"/>
         </methods>
       </class> <!-- employeeFlow.BaseTest -->

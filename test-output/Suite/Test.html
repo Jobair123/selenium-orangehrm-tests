@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 20 15:53:58 BDT 2025</td>
+<td>Started on:</td><td>Sun Sep 21 12:39:51 BDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>69 seconds (69940 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34991 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,33 +77,18 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='employeeFlow.BaseTest.add_employee()'><b>add_employee</b><br>Test class: employeeFlow.BaseTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;app&quot;]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div[1]/div/div[2]/input (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at employeeFlow.BaseTest.add_employee(BaseTest.java:105)
+<td><div><pre>org.testng.TestNGException: 
+Method public void employeeFlow.BaseTest.add_employee() requires a @DataProvider named : getEmployeeData
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace145105559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace145105559'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;app&quot;]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div[1]/div/div[2]/input (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at employeeFlow.BaseTest.add_employee(BaseTest.java:105)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace961983234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace961983234'><pre>org.testng.TestNGException: 
+Method public void employeeFlow.BaseTest.add_employee() requires a @DataProvider named : getEmployeeData
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -124,30 +109,18 @@ Session ID: 2b968d2f1d64c229575b576444dbdfc1
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>12</td>
+<td>0</td>
 <td>employeeFlow.BaseTest@76494737</td></tr>
 <tr>
-<td title='employeeFlow.BaseTest.edit_employee()'><b>edit_employee</b><br>Test class: employeeFlow.BaseTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=&quot;app&quot;]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[4]/button (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at employeeFlow.BaseTest.edit_employee(BaseTest.java:167)
+<td title='employeeFlow.BaseTest.delete()'><b>delete</b><br>Test class: employeeFlow.BaseTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at employeeFlow.BaseTest.delete(BaseTest.java:184)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1196404281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1196404281'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=&quot;app&quot;]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[4]/button (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at employeeFlow.BaseTest.edit_employee(BaseTest.java:167)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1632300236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1632300236'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at employeeFlow.BaseTest.delete(BaseTest.java:184)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -175,7 +148,7 @@ Session ID: 2b968d2f1d64c229575b576444dbdfc1
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>18</td>
+<td>1</td>
 <td>employeeFlow.BaseTest@76494737</td></tr>
 <tr>
 <td title='employeeFlow.BaseTest.search()'><b>search</b><br>Test class: employeeFlow.BaseTest<br>Parameters: 314</td>
@@ -183,22 +156,22 @@ Session ID: 2b968d2f1d64c229575b576444dbdfc1
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64652}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64652/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ac47e2a0cb3f4452ba01d0b0728b98d
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at employeeFlow.BaseTest.search(BaseTest.java:62)
+	at employeeFlow.BaseTest.search(BaseTest.java:63)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace741883443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace741883443'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: oxd-table-card (tried for 10 second(s) with 500 milliseconds interval)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace962700314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace962700314'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: oxd-table-card (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53310}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b968d2f1d64c229575b576444dbdfc1
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64652}, msedge: {msedgedriverVersion: 140.0.3485.81 (5f3674d4b466..., userDataDir: C:\Users\jobai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64652/devtoo..., se:cdpVersion: 140.0.3485.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ac47e2a0cb3f4452ba01d0b0728b98d
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at employeeFlow.BaseTest.search(BaseTest.java:62)
+	at employeeFlow.BaseTest.search(BaseTest.java:63)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -238,14 +211,14 @@ Session ID: 2b968d2f1d64c229575b576444dbdfc1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='employeeFlow.BaseTest.delete()'><b>delete</b><br>Test class: employeeFlow.BaseTest</td>
-<td></td>
-<td>8</td>
-<td>employeeFlow.BaseTest@76494737</td></tr>
-<tr>
 <td title='employeeFlow.BaseTest.navigate_to_pim()'><b>navigate_to_pim</b><br>Test class: employeeFlow.BaseTest</td>
 <td></td>
 <td>1</td>
+<td>employeeFlow.BaseTest@76494737</td></tr>
+<tr>
+<td title='employeeFlow.BaseTest.edit_employee()'><b>edit_employee</b><br>Test class: employeeFlow.BaseTest</td>
+<td></td>
+<td>8</td>
 <td>employeeFlow.BaseTest@76494737</td></tr>
 </table><p>
 </body>
